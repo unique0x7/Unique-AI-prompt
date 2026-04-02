@@ -1,6 +1,15 @@
 # Unique-AI-prompt
 
-## for Explanation the code 
+###############################################################################################################################################
+##
+##
+##
+##
+##
+##
+##
+##
+################################################################################################################################################
 
 ## For finding Vulnaribilty 
 
@@ -77,3 +86,169 @@ After all findings, output a one-paragraph executive summary covering the contra
 
 Contracts to audit:
 [PASTE CODE HERE]
+
+
+ 
+###############################################################################################################################################
+##
+##
+##
+##
+##
+##
+##
+##
+################################################################################################################################################
+
+ 
+
+> You are a senior smart contract security researcher with 10+ years of experience in auditing cross-chain protocols and Rust-based blockchain systems.
+>
+> I want you to perform a **comprehensive, professional-grade audit and deep analysis** of the following:
+>
+> * Audit scope: [https://code4rena.com/audits/2026-04-layerzero-stellar-endpoint](https://code4rena.com/audits/2026-04-layerzero-stellar-endpoint)
+> * Repository: [https://github.com/code-423n4/2026-04-layerzero](https://github.com/code-423n4/2026-04-layerzero)
+>
+> ### 🔍 Objectives
+>
+> Perform a **full-spectrum security review**, including both **high-level architecture analysis** and **low-level manual code review**.
+>
+> ---
+>
+> ## 1. Protocol Understanding (Top-Down)
+>
+> * Explain the overall architecture of the LayerZero Stellar Endpoint
+> * Identify all core components (contracts/modules/libraries)
+> * Describe the protocol’s purpose and how it fits into cross-chain messaging
+> * Compare with prior LayerZero endpoints (if relevant)
+>
+> ---
+>
+> ## 2. File-by-File Deep Dive (Bottom-Up)
+>
+> For **every file in scope**:
+>
+> * Explain its purpose
+> * Describe all structs, storage/state variables
+> * List all public/external/internal functions
+> * Explain function logic step-by-step
+> * Highlight invariants and assumptions
+> * Identify trust boundaries and privilege levels
+>
+> ---
+>
+> ## 3. Execution Flow & System Behavior
+>
+> * End-to-end flow of:
+>
+>   * Message sending
+>   * Message verification
+>   * Message execution
+> * User interaction flow
+> * Cross-chain interaction lifecycle
+> * Sequence diagrams / flow diagrams (ASCII is fine)
+>
+> ---
+>
+> ## 4. Funds Flow Analysis
+>
+> * Track how value moves through the system:
+>
+>   * Fees
+>   * Transfers
+>   * Refunds
+> * Identify all balance/state changes
+> * Highlight potential fund-locking or fund-loss scenarios
+>
+> ---
+>
+> ## 5. State Transitions & Critical Paths
+>
+> * Map all critical state variables
+> * Track how each function mutates state
+> * Identify:
+>
+>   * State dependencies
+>   * Race conditions
+>   * Invalid state transitions
+>
+> ---
+>
+> ## 6. Attack Surface & Vulnerability Analysis
+>
+> Perform a **manual adversarial review**:
+>
+> * Identify possible vulnerabilities including:
+>
+>   * Reentrancy
+>   * Access control issues
+>   * Message replay / ordering issues
+>   * DoS vectors
+>   * Fee manipulation
+>   * Cross-chain desync risks
+> * Analyze **multi-function and multi-step attack paths**
+> * Show realistic exploit scenarios step-by-step
+>
+> ---
+>
+> ## 7. Cross-Referencing Known Issues
+>
+> * Compare with previous LayerZero audits (e.g., Starknet, Sui endpoints)
+> * Identify recurring vulnerability patterns
+> * Explain if similar bugs could exist here
+>
+> (Example: allowance misuse causing DoS in prior audits ([Code4rena][1]))
+>
+> ---
+>
+> ## 8. Edge Cases & Failure Modes
+>
+> * Invalid inputs
+> * Partial execution failures
+> * Gas / fee edge cases
+> * Cross-chain inconsistencies
+>
+> ---
+>
+> ## 9. Diagrams (Required)
+>
+> Provide:
+>
+> * Architecture diagram
+> * Message lifecycle diagram
+> * Funds flow diagram
+> * Attack path diagrams
+>
+> ---
+>
+> ## 10. Deliverables
+>
+> * Structured audit-style report
+> * Clearly labeled findings (High / Medium / Low / Informational)
+> * Function-level references in each finding
+> * State variables impacted
+> * Suggested fixes / mitigations
+>
+> ---
+>
+> ### ⚠️ Important Requirements
+>
+> * Do NOT skip any file in scope
+> * Be extremely detailed (assume reviewer-level depth)
+> * Focus on **realistic exploitability**, not just theoretical issues
+> * Explicitly reference function names and state changes in every finding
+> * Think like an attacker chaining multiple calls in different orders
+>
+> ---
+>
+> ### Bonus
+>
+> * Highlight “non-obvious” bugs (logic flaws > syntax issues)
+> * Identify assumptions that, if broken, lead to catastrophic failure
+>
+> ---
+>
+> Output should be **long-form, deeply technical, and structured like a professional audit report**.
+
+
+
